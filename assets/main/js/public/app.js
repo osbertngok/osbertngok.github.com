@@ -32,7 +32,18 @@
         .state('bio.full', {
           url: '/bio/full',
           parent: 'bio',
-          templateUrl: 'partials/partial-bio-full.html'
+          templateUrl: 'partials/public/partial-bio-full.html'
+        })
+
+        .state('wiki', {
+          abstract: true,
+          templateUrl: 'partials/public/partial-wiki.html'
+        })
+
+        .state('wiki.amc', {
+          url: '/wiki/amc',
+          parent: 'wiki',
+          templateUrl: 'partials/public/partial-wiki-amc.html'
         })
 
         .state('music', {
@@ -43,13 +54,13 @@
         .state('music.albumlist', {
           url: '/music/album/',
           parent: 'music',
-          templateUrl: 'partial/partial-music-albumlist.html'
+          templateUrl: 'partials/partial-music-albumlist.html'
         })
 
         .state('music.songlist', {
           url: '/music/album/:albumName',
           parent: 'music',
-          templateUrl: 'partial/partial-music-albumlist.html'
+          templateUrl: 'partials/partial-music-albumlist.html'
         })
 
         .state('about', {

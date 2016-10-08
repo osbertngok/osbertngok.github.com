@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Progress Report | Osbert Ngok Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="我觉得Genetic Algorithm是最好玩的研究，问题是并不是每个人都玩得起。GA很难获得强的理论支持，主要是其评估函数经常是鸡尾酒形式（这是GA的优势所在），但是每个子评估函数的量纲各异无法统一，故而权重的设置有相当大的随意性。虽然理论上可以使用EM(expectation maximization)来获得较为客观的权重，但是最后的结果依然难以得到别人的认可。
+正因为如此，GA在90">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Progress Report">
+<meta property="og:url" content="http://www.osbertngok.com/2011/02/08/progress-report/index.html">
+<meta property="og:site_name" content="Osbert Ngok Blog">
+<meta property="og:description" content="我觉得Genetic Algorithm是最好玩的研究，问题是并不是每个人都玩得起。GA很难获得强的理论支持，主要是其评估函数经常是鸡尾酒形式（这是GA的优势所在），但是每个子评估函数的量纲各异无法统一，故而权重的设置有相当大的随意性。虽然理论上可以使用EM(expectation maximization)来获得较为客观的权重，但是最后的结果依然难以得到别人的认可。
+正因为如此，GA在90">
+<meta property="og:updated_time" content="2016-10-08T15:02:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Progress Report">
+<meta name="twitter:description" content="我觉得Genetic Algorithm是最好玩的研究，问题是并不是每个人都玩得起。GA很难获得强的理论支持，主要是其评估函数经常是鸡尾酒形式（这是GA的优势所在），但是每个子评估函数的量纲各异无法统一，故而权重的设置有相当大的随意性。虽然理论上可以使用EM(expectation maximization)来获得较为客观的权重，但是最后的结果依然难以得到别人的认可。
+正因为如此，GA在90">
+  
+    <link rel="alternative" href="/atom.xml" title="Osbert Ngok Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/blog/css/style.css">
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">Osbert Ngok Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="sub-nav">
+        
+          <a id="nav-home-icon" class="nav-icon" href="/blog/../"></a>
+        
+          <a id="nav-blog-home-icon" class="nav-icon" href="/blog/"></a>
+        
+          <a id="nav-archives-icon" class="nav-icon" href="/blog/archives"></a>
+        
+          <a id="nav-about-icon" class="nav-icon" href="/blog/about"></a>
+        
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-progress-report" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Progress Report
+    </h1>
+  
+
+      </header>
+    
+    <time class="article-date" datetime="2011-02-08T15:49:10.000Z" itemprop="datePublished">02-08-2011</time>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/amc/">amc</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a> 
+<ol>
+<li><p>我觉得Genetic Algorithm是最好玩的研究，问题是并不是每个人都玩得起。GA很难获得强的理论支持，主要是其评估函数经常是鸡尾酒形式（这是GA的优势所在），但是每个子评估函数的量纲各异无法统一，故而权重的设置有相当大的随意性。虽然理论上可以使用EM(expectation maximization)来获得较为客观的权重，但是最后的结果依然难以得到别人的认可。</p>
+<p>正因为如此，GA在90年代掀起过一阵研究热潮之后，现在在研究领域有点偃旗息鼓的势头。但是对于不少不要求精确的实际应用，GA还是很有实用价值。<br>比如作曲。</p>
+</li>
+<li><p>对巴赫的WTC(Well-Tempered Clavier)进行更多的定量分析之后，可以说我们对WTC的各种音乐要素的分布有了更深的认识，而GA得到的subject也开始听起来像一回事。在两卷WTC一共48首fugue中，我们统计了相邻音所构成的音级的平方的平均值为8.4左右。另一个数据是大二度和小二度上下行占了WTC里面超过70%。这使得我们添加了相邻音音级平方作为评估参数之一，目前看来很有效果。</p>
+</li>
+<li><p>我们遇到的问题基本上有两种，一种是编程问题，一种是数学（统计）问题。编程问题涉及到如何昧着良心写dirty code去迎合shell scripts各种奇怪的重口味。这种强大而乖戾的语言经常让我们对着屏幕无语。当然还有如何利用强大的管道功能编写one-liner。有时我们会写一个小型的二进制数据库加快最基本操作的速度（大概就快了10%）。<br>数学问题包括各种量纲的统一，研究我们把几个值加起来的时候究竟作了怎样的概率假设，还有计算两个离散分布的相似程度。</p>
+</li>
+<li><p>在这个项目里面，GA的鸡尾酒特性外加各种gram的计分使得它还很适合分布式计算。这个想法我和猴子说过，但是没打算付诸实践。</p>
+</li>
+<li><p>小朋友说再继续听我们的程序弄出来的曲子会降低我们的音乐的期望。我跟他开玩笑说，从前有两个人研究人工智能作曲，后来他们成为了serialism的大师。</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.osbertngok.com/blog/2011/02/08/progress-report/" data-id="ciu1dosoq0018rauyum0k9hah" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2011/03/16/if-musicians-were-movie-directors/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          如果音乐家都来拍电影
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2011/02/02/old-high-school/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">舊華附</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Osbert Ngok<br>
+      <a href="https://github.com/steven5538/hexo-theme-athena" target="_blank">Athena</a> by <a href="http://steven5538.tw" target="_blank">Steven5538</a> | Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+  <script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/blog/js/script.js"></script>
+  </div>
+</body>
+</html>

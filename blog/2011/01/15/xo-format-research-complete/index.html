@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>xo格式研发完成 | Osbert Ngok Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这两天开始弄fyp，颇有进展。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="xo格式研发完成">
+<meta property="og:url" content="http://www.osbertngok.com/2011/01/15/xo-format-research-complete/index.html">
+<meta property="og:site_name" content="Osbert Ngok Blog">
+<meta property="og:description" content="这两天开始弄fyp，颇有进展。">
+<meta property="og:updated_time" content="2016-10-08T15:11:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="xo格式研发完成">
+<meta name="twitter:description" content="这两天开始弄fyp，颇有进展。">
+  
+    <link rel="alternative" href="/atom.xml" title="Osbert Ngok Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/blog/css/style.css">
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">Osbert Ngok Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="sub-nav">
+        
+          <a id="nav-home-icon" class="nav-icon" href="/blog/../"></a>
+        
+          <a id="nav-blog-home-icon" class="nav-icon" href="/blog/"></a>
+        
+          <a id="nav-archives-icon" class="nav-icon" href="/blog/archives"></a>
+        
+          <a id="nav-about-icon" class="nav-icon" href="/blog/about"></a>
+        
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-xo-format-research-complete" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      xo格式研发完成
+    </h1>
+  
+
+      </header>
+    
+    <time class="article-date" datetime="2011-01-14T16:17:12.000Z" itemprop="datePublished">01-15-2011</time>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/amc/">amc</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这两天开始弄fyp，颇有进展。</p>
+<a id="more"></a> 
+<p><a href="http://www.musiccog.ohio-state.edu/Humdrum/" target="_blank" rel="external">Humdrum Toolkit</a>是90年代<a href="http://www.music-cog.ohio-state.edu/Huron/" target="_blank" rel="external">Prof. David Huron</a>开发的音乐分析工具系列。这两天开始研究用的时候和小朋友感慨可以做的事情都被做完了。无论如何这套工具让我们的fyp少了很多工作量。</p>
+<p>一些有趣的事实：</p>
+<p>在WTC中，Bach的Pitch 5-gram概率如下：（负对数）</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>Neg. Log.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r</td>
+<td>r</td>
+<td>r</td>
+<td>r</td>
+<td>r</td>
+<td>6.105</td>
+</tr>
+<tr>
+<td>fa</td>
+<td>mi</td>
+<td>re</td>
+<td>do</td>
+<td>ti</td>
+<td>7.760</td>
+</tr>
+<tr>
+<td>mi</td>
+<td>re</td>
+<td>do</td>
+<td>ti</td>
+<td>la</td>
+<td>7.801</td>
+</tr>
+<tr>
+<td>la</td>
+<td>so</td>
+<td>fa</td>
+<td>mi</td>
+<td>re</td>
+<td>7.929</td>
+</tr>
+<tr>
+<td>so</td>
+<td>fa</td>
+<td>mi</td>
+<td>re</td>
+<td>do</td>
+<td>8.127</td>
+</tr>
+<tr>
+<td>re</td>
+<td>mi</td>
+<td>fa</td>
+<td>mi</td>
+<td>re</td>
+<td>8.164</td>
+</tr>
+<tr>
+<td>re</td>
+<td>do</td>
+<td>ti</td>
+<td>do</td>
+<td>re</td>
+<td>8.210</td>
+</tr>
+<tr>
+<td>mi</td>
+<td>re</td>
+<td>do</td>
+<td>ti</td>
+<td>do</td>
+<td>8.249</td>
+</tr>
+<tr>
+<td>ti</td>
+<td>do</td>
+<td>re</td>
+<td>do</td>
+<td>ti</td>
+<td>8.257</td>
+</tr>
+<tr>
+<td>re</td>
+<td>do</td>
+<td>ti</td>
+<td>la</td>
+<td>so</td>
+<td>8.323</td>
+</tr>
+<tr>
+<td>mi</td>
+<td>fa</td>
+<td>mi</td>
+<td>re</td>
+<td>do</td>
+<td>8.482</td>
+</tr>
+<tr>
+<td>do</td>
+<td>ti</td>
+<td>do</td>
+<td>re</td>
+<td>mi</td>
+<td>8.530</td>
+</tr>
+<tr>
+<td>la</td>
+<td>ti</td>
+<td>do</td>
+<td>ti</td>
+<td>la</td>
+<td>8.530</td>
+</tr>
+<tr>
+<td>la</td>
+<td>ti</td>
+<td>do</td>
+<td>re</td>
+<td>mi</td>
+<td>8.569</td>
+</tr>
+<tr>
+<td>la</td>
+<td>ti</td>
+<td>do</td>
+<td>re</td>
+<td>do</td>
+<td>8.683</td>
+</tr>
+<tr>
+<td>do</td>
+<td>re</td>
+<td>mi</td>
+<td>re</td>
+<td>do</td>
+<td>8.705</td>
+</tr>
+<tr>
+<td>do</td>
+<td>ti</td>
+<td>la</td>
+<td>ti</td>
+<td>do</td>
+<td>8.715</td>
+</tr>
+<tr>
+<td>ti</td>
+<td>do</td>
+<td>re</td>
+<td>mi</td>
+<td>fa</td>
+<td>8.727</td>
+</tr>
+<tr>
+<td>mi</td>
+<td>fa</td>
+<td>so</td>
+<td>fa</td>
+<td>mi</td>
+<td>8.760</td>
+</tr>
+<tr>
+<td>re</td>
+<td>mi</td>
+<td>re</td>
+<td>do</td>
+<td>ti</td>
+<td>8.772</td>
+</tr>
+</tbody>
+</table>
+<p>看到这个东西之后我和小朋友彻底打消了用rolling dice的方法创作音乐的想法。GA肯定需要，再看看其他东西吧。</p>
+<p>另外学习了awk，然后研发了一种叫**xo的格式（其实原来是叫**xxoo格式，因为simple duple的曲子用十六分音符表示一拍可能的attack方式就是4个xo字母组成……）</p>
+<p>关于旋律的统计数据要等待明天再弄。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.osbertngok.com/blog/2011/01/15/xo-format-research-complete/" data-id="ciu1dosoy001crauygnxe9klp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2011/02/02/old-high-school/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          舊華附
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2010/12/03/huma116-and-more/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">关于HUMA116，及其他</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Osbert Ngok<br>
+      <a href="https://github.com/steven5538/hexo-theme-athena" target="_blank">Athena</a> by <a href="http://steven5538.tw" target="_blank">Steven5538</a> | Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+  <script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/blog/js/script.js"></script>
+  </div>
+</body>
+</html>
