@@ -1,0 +1,22 @@
+<br class="clear" />
+<h1 class="name" >My Compositions</h1>
+<music-list></music-list>
+
+<script type="text/ng-template" id="/music/music_list.html">
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+    <img alt="Creative Commons License" style="border:none" src="/assets/main/img/common/by-nc-sa.png" />
+  </a>
+  <music-list-detail song="song" ng-repeat="song in $ctrl.songs | filter: {favourate: true}"></music-list-detail>
+</script>
+
+<script type="text/ng-template" id="/music/music_list_detail.html">
+  <div class="music-list-detail-title">
+    <span ng-bind="$ctrl.song.title"></span>
+    <a ng-if="$ctrl.song.score" ng-href="{{$ctrl.song.score}}"><i class="fa fa-book"></i></a>
+    <span>(<span ng-bind="::$ctrl.song.date.substring(0,4)"></span>)</span>
+  </div>
+  <audio class="music-list-detail-audio" controls preload="metadata">
+      <source src="{{$ctrl.song.mp3}}" type="audio/mpeg" />
+      Your browser does not support the audio element.
+  </audio>
+</script>

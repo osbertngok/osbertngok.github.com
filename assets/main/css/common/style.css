@@ -121,3 +121,16 @@ div.input-group-addon a {
   height: 100%;
   width: 100%;
 }
+
+music-list-detail {
+  margin-top: 50px;
+  display: block;
+}
+
+music-list-detail .music-list-detail-title {
+  text-align: left;
+}
+
+music-list-detail .music-list-detail-audio {
+  width: 100%;
+}

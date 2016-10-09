@@ -14,53 +14,38 @@
 
         .state('bio', {
           abstract: true,
+          url: '/bio',
           templateUrl: 'partials/public/partial-bio.html'
         })
 
         .state('bio.oneliner', {
-          url: '/bio/oneliner',
+          url: '/oneliner',
           parent: 'bio',
           templateUrl: 'partials/public/partial-bio-oneliner.html'
         })
 
         .state('bio.multiline', {
-          url: '/bio/multiline',
+          url: '/multiline',
           parent: 'bio',
           templateUrl: 'partials/public/partial-bio-multiline.html'
         })
 
         .state('bio.full', {
-          url: '/bio/full',
+          url: '/full',
           parent: 'bio',
           templateUrl: 'partials/public/partial-bio-full.html'
         })
 
-        .state('wiki', {
-          abstract: true,
-          templateUrl: 'partials/public/partial-wiki.html'
-        })
-
-        .state('wiki.amc', {
-          url: '/wiki/amc',
-          parent: 'wiki',
-          templateUrl: 'partials/public/partial-wiki-amc.html'
-        })
-
         .state('music', {
           abstract: true,
-          templateurl: 'partials/public/partial-music.html'
-        })
-
-        .state('music.albumlist', {
-          url: '/music/album/',
-          parent: 'music',
-          templateUrl: 'partials/partial-music-albumlist.html'
+          url: '/music',
+          templateUrl: 'partials/public/partial-music.html'
         })
 
         .state('music.songlist', {
-          url: '/music/album/:albumName',
+          url: '/songlist',
           parent: 'music',
-          templateUrl: 'partials/partial-music-albumlist.html'
+          templateUrl: 'partials/public/partial-music-list.html'
         })
 
         .state('about', {
