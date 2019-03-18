@@ -1,6 +1,7 @@
 {
   "data": [
     {
+      "favourate": true,
       "isSong": true,
       "isPiano": true,
       "isDedication": true,
@@ -9,7 +10,8 @@
       "genre": "Piano",
       "date": "2019-01-29",
       "notes": "For 3rd year anniversary.<br /><br />Dedicated to <strong>Qing Jiang</strong>.",
-      "mp3": "/music_files/Misc%20II/Osbert%20Ngok%20-%20Wagner's%20Bridal%20Chorus%20Kai.mp3"
+      "mp3": "/music_files/Misc%20II/Osbert%20Ngok%20-%20Wagner's%20Bridal%20Chorus%20Kai.mp3",
+      "score": "score/Wagner's%20Bridal%20Chorus%Kai%20-%20Osbert%20Ngok.pdf"
     },
     {
       "isSong": true,
