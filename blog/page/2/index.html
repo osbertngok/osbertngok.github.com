@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
   
   <title>Osbert Ngok Blog</title>
@@ -9,9 +9,9 @@
 <meta property="og:title" content="Osbert Ngok Blog">
 <meta property="og:url" content="http://www.osbertngok.com/page/2/index.html">
 <meta property="og:site_name" content="Osbert Ngok Blog">
-<meta property="og:locale" content="default">
+<meta property="og:locale">
+<meta property="article:author" content="Osbert Ngok">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Osbert Ngok Blog">
   
     <link rel="alternative" href="/atom.xml" title="Osbert Ngok Blog" type="application/atom+xml">
   
@@ -19,9 +19,11 @@
     <link rel="icon" href="/favicon.png">
   
   <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/blog/css/style.css">
   
-</head></html>
+<link rel="stylesheet" href="/blog/css/style.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
 <body>
   <div id="container">
     <div id="wrap">
@@ -54,6 +56,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-automated-music-composition" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    
+      <header class="article-header">
+        
+  
+    <a class="article-title" href="/blog/2011/05/01/automated-music-composition/">Automated Music Composition</a>
+  
+
+      </header>
+    
+    <time class="article-date" datetime="2011-05-01T04:00:00.000Z" itemprop="datePublished">05-01-2011</time>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/amc/">amc</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>There are many fancy names for automated composition, each of which can be used under different circumstances; but the basic idea is to create a computer program which can imitate the composition process of a human musician.<br>
+        
+          <p class="article-more-link">
+            <a href="/blog/2011/05/01/automated-music-composition/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.osbertngok.com/2011/05/01/automated-music-composition/" data-id="clceszl0z000ndmvj5r4ndas5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-if-musicians-were-movie-directors" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
@@ -84,7 +126,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2011/03/16/if-musicians-were-movie-directors/" data-id="ckriuuuig001591vjhjvmipw1" class="article-share-link">Share</a>
+      <a data-url="http://www.osbertngok.com/2011/03/16/if-musicians-were-movie-directors/" data-id="clceszl160018dmvj8f1zcvmn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -115,11 +157,12 @@
   <div class="article-inner">
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a> 
+        <span id="more"></span> 
 <ol>
-<li><p>我觉得Genetic Algorithm是最好玩的研究，问题是并不是每个人都玩得起。GA很难获得强的理论支持，主要是其评估函数经常是鸡尾酒形式（这是GA的优势所在），但是每个子评估函数的量纲各异无法统一，故而权重的设置有相当大的随意性。虽然理论上可以使用EM(expectation maximization)来获得较为客观的权重，但是最后的结果依然难以得到别人的认可。</p>
-<p>正因为如此，GA在90年代掀起过一阵研究热潮之后，现在在研究领域有点偃旗息鼓的势头。但是对于不少不要求精确的实际应用，GA还是很有实用价值。<br>比如作曲。</p>
-</li>
+<li>我觉得Genetic Algorithm是最好玩的研究，问题是并不是每个人都玩得起。GA很难获得强的理论支持，主要是其评估函数经常是鸡尾酒形式（这是GA的优势所在），但是每个子评估函数的量纲各异无法统一，故而权重的设置有相当大的随意性。虽然理论上可以使用EM(expectation maximization)来获得较为客观的权重，但是最后的结果依然难以得到别人的认可。</li>
+</ol>
+<p>  正因为如此，GA在90年代掀起过一阵研究热潮之后，现在在研究领域有点偃旗息鼓的势头。但是对于不少不要求精确的实际应用，GA还是很有实用价值。<br>比如作曲。</p>
+<ol start="2">
 <li><p>对巴赫的WTC(Well-Tempered Clavier)进行更多的定量分析之后，可以说我们对WTC的各种音乐要素的分布有了更深的认识，而GA得到的subject也开始听起来像一回事。在两卷WTC一共48首fugue中，我们统计了相邻音所构成的音级的平方的平均值为8.4左右。另一个数据是大二度和小二度上下行占了WTC里面超过70%。这使得我们添加了相邻音音级平方作为评估参数之一，目前看来很有效果。</p>
 </li>
 <li><p>我们遇到的问题基本上有两种，一种是编程问题，一种是数学（统计）问题。编程问题涉及到如何昧着良心写dirty code去迎合shell scripts各种奇怪的重口味。这种强大而乖戾的语言经常让我们对着屏幕无语。当然还有如何利用强大的管道功能编写one-liner。有时我们会写一个小型的二进制数据库加快最基本操作的速度（大概就快了10%）。<br>数学问题包括各种量纲的统一，研究我们把几个值加起来的时候究竟作了怎样的概率假设，还有计算两个离散分布的相似程度。</p>
@@ -133,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2011/02/08/progress-report/" data-id="ckriuuuip001k91vj7lsise6p" class="article-share-link">Share</a>
+      <a data-url="http://www.osbertngok.com/2011/02/08/progress-report/" data-id="clceszl1b001ndmvj3kcnd3v8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -164,7 +207,7 @@
   <div class="article-inner">
     <div class="article-entry" itemprop="articleBody">
       
-        <p>兩天前和華附人脈團隊聚會，晚飯後一同潛入夜幕籠罩的華附校園。喝著啤酒跨過狀元橋，翻越升旗台入口的高牆。只是這次，身為華附校友的我們，肆無忌憚。<br>
+        <p>兩天前和華附人脈團隊聚會，晚飯後一同潛入夜幕籠罩的華附校園。喝著啤酒跨過狀元橋，翻越升旗台入口的高牆。只是這次，身為華附校友的我們，肆無忌憚。</p>
         
           <p class="article-more-link">
             <a href="/blog/2011/02/02/old-high-school/#more">Read More</a>
@@ -173,7 +216,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2011/02/02/old-high-school/" data-id="ckriuuuik001c91vjpmap20xt" class="article-share-link">Share</a>
+      <a data-url="http://www.osbertngok.com/2011/02/02/old-high-school/" data-id="clceszl19001gdmvje99q5443" class="article-share-link">Share</a>
       
       
     </footer>
@@ -213,7 +256,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2011/01/15/xo-format-research-complete/" data-id="ckriuuuiu001t91vj8mvn9r1g" class="article-share-link">Share</a>
+      <a data-url="http://www.osbertngok.com/2011/01/15/xo-format-research-complete/" data-id="clceszl1d001vdmvj4q08eqdd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -253,7 +296,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2010/12/03/about-a-bach-ish-fugue/" data-id="ckriuuui7000n91vjtuj21vy2" class="article-share-link">Share</a>
+      <a data-url="http://www.osbertngok.com/2010/12/03/about-a-bach-ish-fugue/" data-id="clceszl0w000idmvj35d82ebv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -293,7 +336,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2010/12/03/huma116-and-more/" data-id="ckriuuuid000x91vjqokokyit" class="article-share-link">Share</a>
+      <a data-url="http://www.osbertngok.com/2010/12/03/huma116-and-more/" data-id="clceszl140011dmvjgtfi04x6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -333,7 +376,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2010/10/12/huma116-private-lesson-ii/" data-id="ckriuuuif001291vjdm9woqik" class="article-share-link">Share</a>
+      <a data-url="http://www.osbertngok.com/2010/10/12/huma116-private-lesson-ii/" data-id="clceszl160016dmvj6ddx80l3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -373,7 +416,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2010/10/05/huma116-private-lesson-i/" data-id="ckriuuuie001091vjnzjpm9qy" class="article-share-link">Share</a>
+      <a data-url="http://www.osbertngok.com/2010/10/05/huma116-private-lesson-i/" data-id="clceszl150013dmvj0w411zk6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -415,47 +458,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2010/08/22/an-arachnid-drowned-in-my-vomit-last-night/" data-id="ckriuuuhz000g91vjbx8etp9y" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-gre-words-review" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    
-      <header class="article-header">
-        
-  
-    <a class="article-title" href="/blog/2010/07/05/gre-words-review/">GRE Words Review</a>
-  
-
-      </header>
-    
-    <time class="article-date" datetime="2010-07-05T06:59:03.000Z" itemprop="datePublished">07-05-2010</time>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/programming/">programming</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>The original edition: GRE Linker Game: <a href="#">http://ihome.ust.hk/~cs_yyxab/gre/index.html</a></p>
-        
-          <p class="article-more-link">
-            <a href="/blog/2010/07/05/gre-words-review/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.osbertngok.com/2010/07/05/gre-words-review/" data-id="ckriuuuic000w91vjpn5edz3m" class="article-share-link">Share</a>
+      <a data-url="http://www.osbertngok.com/2010/08/22/an-arachnid-drowned-in-my-vomit-last-night/" data-id="clceszl0x000ldmvjfi160mr2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -467,7 +470,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/blog/">&laquo; Prev</a><a class="page-number" href="/blog/">1</a><span class="page-number current">2</span><a class="page-number" href="/blog/page/3/">3</a><a class="extend next" rel="next" href="/blog/page/3/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/blog/">&amp;laquo; Prev</a><a class="page-number" href="/blog/">1</a><span class="page-number current">2</span><a class="page-number" href="/blog/page/3/">3</a><a class="extend next" rel="next" href="/blog/page/3/">Next &amp;raquo;</a>
     </nav>
   
 </section>
@@ -477,7 +480,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2021 Osbert Ngok<br>
+      &copy; 2023 Osbert Ngok<br>
       <a href="https://github.com/steven5538/hexo-theme-athena" target="_blank">Athena</a> by <a href="http://steven5538.tw" target="_blank">Steven5538</a> | Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -488,11 +491,17 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
-  <script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+  
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+
+  
+<script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/blog/js/script.js"></script>
+
   </div>
 </body>
 </html>
